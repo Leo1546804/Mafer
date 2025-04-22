@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mensaje para David</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #e0e0e0;
+      margin: 0;
+      padding: 0;
+      overflow-y: auto;
+      min-height: 100vh;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+      color: #d32f2f;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.7;
+      color: #333;
+      white-space: pre-wrap;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: contain; /* Cambié a contain para que las imágenes se ajusten sin recortes */
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      max-height: 300px;  /* Asegura que las imágenes no sean demasiado altas */
+    }
+
+    .btn-encima {
+      background-color: #d32f2f;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      display: block;
+      margin: 40px auto 0;
+    }
+
+    .btn-encima:hover {
+      transform: scale(1.1);
+      background-color: #f44336;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>¡A ESTE PATA QUIERO PEGARLE!</h1>
+    <p>
+      A este imbecil le tengo una cólera que no puedo describir. No sabes cuánta rabia me da saber que te hizo sufrir, Si alguna vez me lo cruzo por ahí, de verdad que le saco su mierda. Me jode tanto que haya hecho llorar a mi bebota.<br><br>
+
+      En serio, este tipo un estupido en su totalidad, y si lo veo, no voy a dudar ni un segundo en sacarle la mierda para q aprenda.
+    </p>
+
+    <div class="gallery">
+      <img src="david1.jpeg" alt="David 1">
+      <img src="david2.jpeg" alt="David 2">
+    </div>
+
+    <button class="btn-encima" onclick="window.location.href='index.html';">VOLVER</button>
+  </div>
+
+</body>
+</html>

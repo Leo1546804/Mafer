@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para Mafer 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ffd6e0, #ffe6f0);
+      margin: 0;
+      padding: 40px 20px;
+      overflow-y: auto; /* Activa scroll cuando se necesita */
+    }
+
+    .container {
+      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #ff4d6d;
+      margin-bottom: 40px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Siempre 3 columnas */
+      gap: 20px;
+      justify-items: center;
+      margin-bottom: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .love-button {
+      background-color: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, background-color 0.3s;
+      animation: pulse 2s infinite;
+      margin-bottom: 40px;
+    }
+
+    .love-button:hover {
+      transform: scale(1.1);
+      background-color: #ff6f91;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    /* Asegura que en pantallas pequeñas se adapte */
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hola mi amor Mafer 💖<br>Esta sorpresa es solo para ti...</h1>
+
+    <div class="gallery">
+      <img src="mafer1.jpeg" alt="Mafer 1">
+      <img src="mafer2.jpeg" alt="Mafer 2">
+      <img src="mafer3.jpeg" alt="Mafer 3">
+      <img src="mafer4.jpeg" alt="Mafer 4">
+      <img src="mafer5.jpeg" alt="Mafer 5">
+      <img src="mafer6.jpeg" alt="Mafer 6">
+    </div>
+
+    <button class="love-button" onclick="location.href='mensaje.html'">Haz clic para descubrir 💌</button>
+  </div>
+</body>
+</html>
